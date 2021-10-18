@@ -1,0 +1,54 @@
+<!-- Attributes and pseudo selectors -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attributes and pseudo selectors</title>
+    <style>
+        .container{
+            display: block;
+            width: 500px;
+            margin: auto;
+        }
+        input[type='text']{   /*aisa input jiska type text hai that is pseodo selector*/
+                padding:12px;
+                margin:3px;
+                border:3px solid rgb(207, 105, 105);
+        }
+        a[target='blank']{
+            background-color: blue;
+        }
+
+        .text{
+            display: block;
+            margin:20px 10px;
+        }
+        .submit{
+            margin: 20px 50px;
+
+        }
+
+        
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <form action="noaction" class="form-info">
+            <input type="text"class="text" placeholder="Enter your name">
+            <input type="email" class="text" placeholder="Enter your email">
+            <input type="password" class="text" placeholder="Enter your password">
+            <input type="submit" class="submit">
+            
+        </form>
+        <ul>
+            <li class="items" id="items1"><a href="#" target="blank">Item1</a></li>
+            <li class="items" id="items2"><a href="#">Item2</a></li>
+            <li class="items" id="items3"><a href="#">Item3</a></li>
+            <li class="items" id="items4"><a href="#">item4</a></li>
+        </ul>
+    </div>
+    
+</body>
+</html>
