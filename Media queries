@@ -1,0 +1,54 @@
+<!-- media queries -->
+<!-- to make website responsive me have to fire a media query
+    syntax:
+        media@ (condition){
+            element{properties}
+        } -->
+        <!-- when a certain condition true for a media query then it get fired for a website and make changes according to properties written in the media query -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Queries</title>
+    <style>
+        .box {
+            font-size: 70px;
+            background-color: rgb(218, 148, 158);
+            text-align: center;
+            display: none;
+        }
+        @media (max-width: 300px){
+            #box1{
+                display: block;
+                background-color: rgb(200, 150, 247);
+            }}
+        @media (min-width:300px) and (max-width: 500px){
+            #box2{
+                display: block;
+                background-color: rgb(50, 127, 146);
+            } }
+        @media (min-width:500px) and (max-width: 800px){
+            #box3{
+                display: block;
+                background-color: rgb(56, 136, 46);
+            }}
+        @media (min-width:800px) and (max-width: 2000px){
+            #box4{
+                display: block;
+                background-color: rgb(122, 21, 46);
+            }
+        }
+        </style>
+</head>
+
+<body>
+    <div class="box" id="box1">Mi ek i-phone ahe</div>
+    <div class="box" id="box2">Mi ek Tablet ahe</div>
+    <div class="box" id="box3">Mi ek computer ahe</div>
+    <div class="box" id="box4">Mi ek wide screen computer ahe</div>
+
+</body>
+
+</html>
