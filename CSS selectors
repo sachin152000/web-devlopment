@@ -23,6 +23,7 @@
 
     /* if p is right inside div then this CSS will be applied */
     /* div > p{
+        font-size:18px;
         color: yellow;
         background-color: green;
         font-weight: bold;
